@@ -34,6 +34,11 @@ pipeline {
                 bat 'mvn package'
             }
         }
+    }
 
+    post {
+        always {
+            cleanWs()
+        }
     }
 }
