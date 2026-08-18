@@ -14,8 +14,8 @@ public class JenkinsDemoServiceTest {
         JenkinsDemoService service = new JenkinsDemoService();
 
         assertEquals(
-            "Hello from Jenkins",
-            service.getMessage()
-        );
+        	    "Wrong message",
+        	    service.getMessage()
+        	);
     }
 }
